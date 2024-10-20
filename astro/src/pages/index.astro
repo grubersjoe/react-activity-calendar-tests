@@ -1,0 +1,11 @@
+---
+import Calendar from "../components/Calendar";
+import Layout from '../layouts/Layout.astro';
+---
+
+<Layout title="Astro">
+    <main>
+        <h3>Astro</h3>
+        <Calendar client:only="react" />
+    </main>
+</Layout>

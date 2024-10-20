@@ -1,0 +1,25 @@
+{
+  "name": "astro",
+  "type": "module",
+  "version": "0.0.1",
+  "scripts": {
+    "dev": "astro dev --port 3001",
+    "start": "astro preview",
+    "build": "astro check && astro build",
+    "preview": "astro preview --port 3001",
+    "astro": "astro",
+    "dev-test": "rm -rf dist/ .astro/ && npm run dev",
+    "ssr-test": "rm -rf dist/ .astro/ && npm run build && npm run preview"
+  },
+  "dependencies": {
+    "@astrojs/check": "^0.9.4",
+    "@astrojs/react": "^3.6.2",
+    "@types/react": "^18.3.11",
+    "@types/react-dom": "^18.3.1",
+    "astro": "^4.16.6",
+    "react": "^18.3.1",
+    "react-activity-calendar": "^2.6.3",
+    "react-dom": "^18.3.1",
+    "typescript": "^5.6.3"
+  }
+}
