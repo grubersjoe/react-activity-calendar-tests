@@ -1,0 +1,3 @@
+[submodule "react-activity-calendar"]
+	path = react-activity-calendar
+	url = git@github.com:grubersjoe/react-activity-calendar.git
