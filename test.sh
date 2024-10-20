@@ -6,22 +6,23 @@ if test "$argv[1]" != "dev" -a "$argv[1]" != "ssr"
     exit 1
 end
 
-
-echo "Killing processes on port 3001,3002,3003,3004..."
+echo "Killing processes on port 3001-3004..."
 source test_kill.sh
 
 echo "Building react-activity-calendar..."
-cd ../react-activity-calendar
+cd react-activity-calendar
 git checkout main > /dev/null
-p build > /dev/null
+git pull > /dev/null
+pnpm i --ignore-scripts && pnpm build
 cd -
 
+cd frameworks
 for p in */package.json
     set d (dirname $p)
     cd $d
-    pnpm install --ignore-scripts > /dev/null
-    cp ../../react-activity-calendar/build/* node_modules/react-activity-calendar/build/
-    npm run $argv[1]-test > /dev/null &
+    pnpm i --ignore-scripts > /dev/null
+    cp -r ../../react-activity-calendar/build node_modules/react-activity-calendar/
+    pnpm run $argv[1]-test > /dev/null &
     echo "[$d] pid $last_pid"
     cd -
 end
