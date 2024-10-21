@@ -26,7 +26,7 @@ if test "$argv[1]" = "dev"
     set sleep 3
 end
 
-echo "Waiting $sleep s for servers to start..."
+printf "Waiting %ss for servers to start...\n" $sleep
 sleep $sleep
 
 for pid in $pids;
