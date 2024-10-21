@@ -15,8 +15,8 @@ importers:
         specifier: ^18
         version: 18.3.1
       react-activity-calendar:
-        specifier: ^2.6.3
-        version: 2.6.3(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
+        specifier: ^2.7.0
+        version: 2.7.0(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       react-dom:
         specifier: ^18
         version: 18.3.1(react@18.3.1)
@@ -167,8 +167,8 @@ packages:
     resolution: {integrity: sha512-PS08Iboia9mts/2ygV3eLpY5ghnUcfLV/EXTOW1E2qYxJKGGBUtNjN76FYHnMs36RmARn41bC0AZmn+rR0OVpQ==}
     engines: {node: ^10 || ^12 || >=14}
 
-  react-activity-calendar@2.6.3:
-    resolution: {integrity: sha512-FlBOuH2KnoOxYPMKjPMAJOdGjThbeGNMRTyS3UgrRHoKnb9izebFbrwcRSl8BSdXVnxB5N8OQ+8kWrwXvk/zNg==}
+  react-activity-calendar@2.7.0:
+    resolution: {integrity: sha512-zH3FdNtGAOcBKnJoSs+k4Edwd3w7vNe2m0LznpQRt+r0cTNIIDSeHBbPKADNcxpyQyLwm4x4DPLQsROpiAjvkw==}
     peerDependencies:
       react: ^18.0.0
       react-dom: ^18.0.0
@@ -325,7 +325,7 @@ snapshots:
       picocolors: 1.1.1
       source-map-js: 1.2.1
 
-  react-activity-calendar@2.6.3(react-dom@18.3.1(react@18.3.1))(react@18.3.1):
+  react-activity-calendar@2.7.0(react-dom@18.3.1(react@18.3.1))(react@18.3.1):
     dependencies:
       date-fns: 4.1.0
       react: 18.3.1
