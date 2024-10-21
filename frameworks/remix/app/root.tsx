@@ -1,5 +1,5 @@
-import { Links, Meta, Outlet, Scripts } from "@remix-run/react";
-import "./styles.css";
+import { Links, Meta, Outlet, Scripts } from '@remix-run/react';
+import './styles.css';
 
 export function Layout({ children }: { children: React.ReactNode }) {
   return (
