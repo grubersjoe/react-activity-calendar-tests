@@ -21,7 +21,7 @@ for p in */package.json
       or abort "unknown"
 end
 
-set sleep 10
+set sleep 6
 if test "$argv[1]" = "dev"
     set sleep 3
 end
