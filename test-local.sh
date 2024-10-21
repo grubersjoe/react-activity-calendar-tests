@@ -9,6 +9,6 @@ if test "$argv[1]" != "dev" -a "$argv[1]" != "ssr"
 end
 
 cd (dirname (status --current-filename))
-./scripts/upgrade.sh
+./scripts/upgrade-local.sh
 ./scripts/build.sh
 ./scripts/run.sh $argv
