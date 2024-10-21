@@ -1,0 +1,7 @@
+*.sh
+*lock.yaml
+react-activity-calendar/
+frameworks/astro/.astro
+frameworks/nextjs/.next
+frameworks/remix/build
+frameworks/vite/dist

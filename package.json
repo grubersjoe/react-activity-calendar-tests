@@ -1,5 +1,21 @@
 {
-	"devDependencies": {
-		"prettier": "^3.3.3"
-	}
+  "name": "react-activity-calendar-tests",
+  "author": "Jonathan Gruber <gruberjonathan@gmail.com>",
+  "private": true,
+  "license": "UNLICENSED",
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/grubersjoe/react-activity-calendar-tests.git"
+  },
+  "scripts": {
+    "format": "prettier --write ./*"
+  },
+  "devDependencies": {
+    "prettier": "^3.3.3"
+  },
+  "prettier": {
+    "proseWrap": "always",
+    "singleQuote": true,
+    "trailingComma": "all"
+  }
 }
