@@ -9,3 +9,12 @@ cd ../react-activity-calendar;
   and pnpm build &> /dev/null; or abort "Failed to build react-activity-calendar";
   and cd -;
   or abort "failed building"
+
+cd ../frameworks
+for p in */package.json
+    set -l framework (dirname $p);
+      and cd $framework; or abort "cd";
+      and cp -r ../../react-activity-calendar/dist node_modules/react-activity-calendar/; or abort "copying build artifacts failed";
+      and cd -;
+      or abort "unknown"
+end

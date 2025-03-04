@@ -11,7 +11,6 @@ for p in */package.json
     set -l framework (dirname $p);
       and cd $framework; or abort "cd";
       and pnpm i --ignore-scripts > /dev/null; or abort "failed installing packages";
-      and cp -r ../../react-activity-calendar/build node_modules/react-activity-calendar/; or abort "copying build artifacts failed";
       and pnpm run "$argv[1]-test" > /dev/null &
 
     set -l pid $last_pid
