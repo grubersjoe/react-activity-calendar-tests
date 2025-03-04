@@ -11,15 +11,16 @@
     "dev-test": " rm -rf .next/ && npm run dev"
   },
   "dependencies": {
-    "next": "14.2.15",
-    "react": "^18",
-    "react-activity-calendar": "^2.7.0",
-    "react-dom": "^18"
+    "next": "15.2.1",
+    "react": "^19.0.0",
+    "react-activity-calendar": "^2.7.9",
+    "react-dom": "^19.0.0"
   },
   "devDependencies": {
-    "@types/node": "^20",
-    "@types/react": "^18",
-    "@types/react-dom": "^18",
-    "typescript": "^5"
+    "@floating-ui/react-dom": "^2.1.2",
+    "@types/node": "^22.13.9",
+    "@types/react": "^19.0.10",
+    "@types/react-dom": "^19.0.4",
+    "typescript": "^5.8.2"
   }
 }
