@@ -18,14 +18,20 @@ const data = [
   },
 ];
 
-export default function Home() {
+export default async function Home() {
   return (
     <>
       <h3>Next.js</h3>
       <ActivityCalendar
         data={data}
         theme={{ light: ['#eee', 'violet'] }}
-        showWeekdayLabels={['mon', 'fri']}
+        tooltips={{
+          activity: {
+            text: (activity) =>
+              `${activity.count} activities on ${activity.date}`,
+            withArrow: true,
+          },
+        }}
       />
     </>
   );

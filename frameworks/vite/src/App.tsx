@@ -1,5 +1,6 @@
 import './App.css';
 import { ActivityCalendar } from 'react-activity-calendar';
+import 'react-activity-calendar/tooltips.css';
 
 const data = [
   {
@@ -26,7 +27,13 @@ function App() {
       <ActivityCalendar
         data={data}
         theme={{ light: ['#eee', 'violet'] }}
-        showWeekdayLabels={['mon', 'fri']}
+        tooltips={{
+          activity: {
+            text: (activity) =>
+              `${activity.count} activities on ${activity.date}`,
+            withArrow: true,
+          },
+        }}
       />
     </>
   );
