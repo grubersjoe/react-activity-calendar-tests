@@ -11,18 +11,18 @@
     "dev-test": "rm -rf node_modules/.vite && npm run dev"
   },
   "dependencies": {
-    "react": "^19.0.0",
-    "react-activity-calendar": "^2.7.9",
-    "react-dom": "^19.0.0"
+    "react": "^19.1.1",
+    "react-activity-calendar": "3.0.0-alpha.4",
+    "react-dom": "^19.1.1"
   },
   "devDependencies": {
-    "@floating-ui/react-dom": "^2.1.2",
-    "@types/react": "^19.0.10",
-    "@types/react-dom": "^19.0.4",
-    "@vitejs/plugin-react-swc": "^3.8.0",
+    "@floating-ui/react": "^0.27.16",
+    "@types/react": "^19.1.12",
+    "@types/react-dom": "^19.1.9",
+    "@vitejs/plugin-react-swc": "^4.0.1",
     "globals": "^16.0.0",
-    "typescript": "^5.8.2",
-    "vite": "^6.2.0"
+    "typescript": "^5.9.2",
+    "vite": "^7.1.4"
   },
   "pnpm": {
     "onlyBuiltDependencies": [

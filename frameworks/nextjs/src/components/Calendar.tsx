@@ -6,20 +6,8 @@
 
 import { ActivityCalendar } from 'react-activity-calendar';
 import 'react-activity-calendar/tooltips.css';
-import { calendarData } from '../../../config';
+import { calendarProps } from '../../../props';
 
 export function Calendar() {
-  return (
-    <ActivityCalendar
-      data={calendarData}
-      theme={{ light: ['#eee', 'violet'] }}
-      tooltips={{
-        activity: {
-          text: (activity) =>
-            `${activity.count} activities on ${activity.date}`,
-          withArrow: true,
-        },
-      }}
-    />
-  );
+  return <ActivityCalendar {...calendarProps} />;
 }
