@@ -1,7 +1,7 @@
 #!/usr/bin/env fish
 
 cd (dirname (status --current-filename))
-source common.sh
+source common.fish
 
 echo "Building react-activity-calendar...."
 cd ../react-activity-calendar;
@@ -14,7 +14,7 @@ cd ../frameworks
 for p in */package.json
     set -l framework (dirname $p);
       and cd $framework; or abort "cd";
-      and cp -r ../../react-activity-calendar/dist node_modules/react-activity-calendar/; or abort "copying build artifacts failed";
+      and cp -r ../../react-activity-calendar/build node_modules/react-activity-calendar/; or abort "copying build artifacts failed";
       and cd -;
       or abort "unknown"
 end

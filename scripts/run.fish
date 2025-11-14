@@ -1,9 +1,9 @@
 #!/usr/bin/env fish
 
 cd (dirname (status --current-filename))
-source common.sh
+source common.fish
 
-./kill.sh
+./kill.fish
 
 set -l pids
 cd ../frameworks

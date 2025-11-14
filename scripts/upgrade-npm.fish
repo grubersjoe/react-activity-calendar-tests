@@ -1,7 +1,7 @@
 #!/usr/bin/env fish
 
 cd (dirname (status --current-filename))
-source common.sh
+source common.fish
 
 echo "Upgrading npm package..."
 cd ../frameworks

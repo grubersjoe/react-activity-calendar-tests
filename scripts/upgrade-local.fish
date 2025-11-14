@@ -1,7 +1,7 @@
 #!/usr/bin/env fish
 
 cd (dirname (status --current-filename))
-source common.sh
+source common.fish
 
 set branch "main"
 if test -n "$argv[2]"
