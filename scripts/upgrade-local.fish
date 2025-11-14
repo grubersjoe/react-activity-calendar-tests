@@ -1,18 +1,17 @@
-#!/usr/bin/env fish
+#!/usr/bin/env bash
+set -euo pipefail
 
-cd (dirname (status --current-filename))
-source common.fish
+cd "$(dirname "${BASH_SOURCE[0]}")"
+source ./common.sh
 
-set branch "main"
-if test -n "$argv[2]"
-   set branch "$argv[2]"
-end
+branch="main"
+if [[ -n "${2-}" ]]; then
+  branch="$2"
+fi
 
 echo "Fetching react-activity-calendar..."
-git submodule update --init > /dev/null;
-  and cd ../react-activity-calendar &> /dev/null;
-  and git checkout $branch > /dev/null;
-  and git pull > /dev/null;
-  and cd -;
-  or abort "failed fetching"
-
+git submodule update --init > /dev/null
+pushd ../react-activity-calendar > /dev/null || abort "failed fetching"
+git checkout "$branch" > /dev/null
+git pull > /dev/null
+popd > /dev/null || abort "failed fetching"

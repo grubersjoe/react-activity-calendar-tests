@@ -1,11 +1,12 @@
-#!/usr/bin/env fish
+#!/usr/bin/env bash
+set -euo pipefail
 
-if test "$argv[1]" != "dev" -a "$argv[1]" != "ssr"
-    set p (basename (status -f))
-    echo "Usage: $p [dev|ssr]"
-    exit 1
-end
+if [[ "${1-}" != "dev" && "${1-}" != "ssr" ]]; then
+  p="$(basename "$0")"
+  echo "Usage: $p [dev|ssr]"
+  exit 1
+fi
 
-cd (dirname (status --current-filename))
-./scripts/upgrade-npm.fish
-./scripts/run.fish $argv
+cd "$(dirname "${BASH_SOURCE[0]}")"
+./scripts/upgrade-npm.sh
+./scripts/run.sh "$@"
