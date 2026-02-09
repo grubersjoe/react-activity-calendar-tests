@@ -122,8 +122,8 @@ importers:
         specifier: ^7.1.4
         version: 7.1.4(@types/node@25.2.2)(sass-embedded@1.93.3)(sass@1.93.3)(terser@5.43.1)(yaml@2.8.2)
       vite-tsconfig-paths:
-        specifier: ^5.1.4
-        version: 5.1.4(typescript@5.9.2)(vite@7.1.4(@types/node@25.2.2)(sass-embedded@1.93.3)(sass@1.93.3)(terser@5.43.1)(yaml@2.8.2))
+        specifier: ^6.1.0
+        version: 6.1.0(typescript@5.9.2)(vite@7.1.4(@types/node@25.2.2)(sass-embedded@1.93.3)(sass@1.93.3)(terser@5.43.1)(yaml@2.8.2))
 
   frameworks/vite:
     dependencies:
@@ -7996,13 +7996,10 @@ packages:
     engines: {node: ^18.0.0 || ^20.0.0 || >=22.0.0}
     hasBin: true
 
-  vite-tsconfig-paths@5.1.4:
-    resolution: {integrity: sha512-cYj0LRuLV2c2sMqhqhGpaO3LretdtMn/BVX4cPLanIZuwwrkVl+lK84E/miEXkCHWXuq65rhNN4rXsBcOB3S4w==}
+  vite-tsconfig-paths@6.1.0:
+    resolution: {integrity: sha512-kpd3sY9glHIDaq4V/Tlc1Y8WaKtutoc3B525GHxEVKWX42FKfQsXvjFOemu1I8VIN8pNbrMLWVTbW79JaRUxKg==}
     peerDependencies:
       vite: '*'
-    peerDependenciesMeta:
-      vite:
-        optional: true
 
   vite@5.4.21:
     resolution: {integrity: sha512-o5a9xKjbtuhY6Bi5S3+HvbRERmouabWbyUcpXXUA1u+GNUKoROi9byOJ8M0nHbHYHkYICiMlqxkg1KkYmm25Sw==}
@@ -9617,7 +9614,7 @@ snapshots:
       '@babel/parser': 7.29.0
       '@babel/template': 7.27.2
       '@babel/types': 7.29.0
-      debug: 4.4.1
+      debug: 4.4.3
     transitivePeerDependencies:
       - supports-color
 
@@ -10176,7 +10173,7 @@ snapshots:
   '@eslint/config-array@0.21.0':
     dependencies:
       '@eslint/object-schema': 2.1.6
-      debug: 4.4.1
+      debug: 4.4.3
       minimatch: 3.1.2
     transitivePeerDependencies:
       - supports-color
@@ -10190,7 +10187,7 @@ snapshots:
   '@eslint/eslintrc@3.3.1':
     dependencies:
       ajv: 6.12.6
-      debug: 4.4.1
+      debug: 4.4.3
       espree: 10.4.0
       globals: 14.0.0
       ignore: 5.3.2
@@ -11698,7 +11695,7 @@ snapshots:
       '@typescript-eslint/types': 8.46.4
       '@typescript-eslint/typescript-estree': 8.46.4(typescript@5.8.3)
       '@typescript-eslint/visitor-keys': 8.46.4
-      debug: 4.4.1
+      debug: 4.4.3
       eslint: 9.34.0
       typescript: 5.8.3
     transitivePeerDependencies:
@@ -11742,7 +11739,7 @@ snapshots:
       '@typescript-eslint/tsconfig-utils': 8.46.4(typescript@5.8.3)
       '@typescript-eslint/types': 8.46.4
       '@typescript-eslint/visitor-keys': 8.46.4
-      debug: 4.4.1
+      debug: 4.4.3
       fast-glob: 3.3.3
       is-glob: 4.0.3
       minimatch: 9.0.5
@@ -13090,7 +13087,7 @@ snapshots:
 
   esbuild-register@3.6.0(esbuild@0.25.9):
     dependencies:
-      debug: 4.4.1
+      debug: 4.4.3
       esbuild: 0.25.9
     transitivePeerDependencies:
       - supports-color
@@ -17725,12 +17722,11 @@ snapshots:
       - tsx
       - yaml
 
-  vite-tsconfig-paths@5.1.4(typescript@5.9.2)(vite@7.1.4(@types/node@25.2.2)(sass-embedded@1.93.3)(sass@1.93.3)(terser@5.43.1)(yaml@2.8.2)):
+  vite-tsconfig-paths@6.1.0(typescript@5.9.2)(vite@7.1.4(@types/node@25.2.2)(sass-embedded@1.93.3)(sass@1.93.3)(terser@5.43.1)(yaml@2.8.2)):
     dependencies:
-      debug: 4.4.1
+      debug: 4.4.3
       globrex: 0.1.2
       tsconfck: 3.1.6(typescript@5.9.2)
-    optionalDependencies:
       vite: 7.1.4(@types/node@25.2.2)(sass-embedded@1.93.3)(sass@1.93.3)(terser@5.43.1)(yaml@2.8.2)
     transitivePeerDependencies:
       - supports-color
