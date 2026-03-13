@@ -10,35 +10,27 @@ if [ -n "$k" ]; then
   kill $k
 fi
 
-pids=()
 cd ../frameworks || exit 1
 for p in */package.json; do
+  (
     framework=$(dirname "$p")
     cd "$framework" || abort "cd"
-    pnpm --loglevel=error i --ignore-scripts > /dev/null || abort "failed installing packages"
-    pnpm --loglevel=error run "$1-test" > /dev/null &
-
-    pid=$!
-    pids+=("$pid")
-    echo "Starting $framework (pid $pid)..."
-    cd - > /dev/null || abort "unknown"
+    pnpm --loglevel=error i --ignore-scripts > /dev/null || abort "installing packages failed"
+    nohup pnpm --loglevel=error run "$1-test" > /dev/null 2>&1 &
+    echo "Starting $framework (pid $!)..."
+ ) || abort "starting failed"
 done
 
-sleep=6
-if [ "$1" = "dev" ]; then
-    sleep=3
-fi
-
-printf "Waiting %ss for servers to start...\n" $sleep
-sleep $sleep
-
-for pid in "${pids[@]}"; do
-    if ! ps -p $pid > /dev/null; then
-        abort "$pid not running"
+echo "Waiting for servers to start..."
+for port in {3001..3004}; do
+    if curl -s -f \
+        --retry 10 \
+        --retry-delay 1 \
+        --retry-connrefused \
+        --max-time 2 \
+        "http://localhost:$port" > /dev/null; then
+      open "http://localhost:$port"
+    else
+      abort ":$port not responding, aborting"
     fi
 done
-
-open http://localhost:3001
-open http://localhost:3002
-open http://localhost:3003
-open http://localhost:3004
