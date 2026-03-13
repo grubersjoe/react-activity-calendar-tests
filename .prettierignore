@@ -1,4 +1,4 @@
-*.sh
+*.fish
 *lock.yaml
 react-activity-calendar/
 frameworks/astro/.astro

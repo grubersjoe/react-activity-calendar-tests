@@ -3,24 +3,23 @@
   "type": "module",
   "version": "0.0.1",
   "scripts": {
-    "dev": "astro dev --port 3001",
-    "start": "astro preview",
-    "build": "astro check && astro build",
-    "preview": "astro preview --port 3001",
     "astro": "astro",
-    "dev-test": "rm -rf dist/ .astro/ && npm run dev",
-    "ssr-test": "rm -rf dist/ .astro/ && npm run build && npm run preview"
+    "build": "astro check && astro build",
+    "dev": "astro dev --port 3001",
+    "dev-test": "npm run dev",
+    "preview": "astro preview --port 3001",
+    "ssr-test": "npm run build && npm run preview",
+    "start": "astro preview"
   },
   "dependencies": {
-    "@astrojs/check": "^0.9.4",
-    "@astrojs/react": "^4.2.1",
-    "@floating-ui/react": "^0.27.16",
-    "@types/react": "^19.1.12",
-    "@types/react-dom": "^19.1.9",
-    "astro": "^5.13.5",
-    "react": "^19.1.1",
-    "react-activity-calendar": "3.0.0-alpha.4",
-    "react-dom": "^19.1.1",
-    "typescript": "^5.9.2"
+    "@astrojs/check": "^0.9.7",
+    "@astrojs/react": "^5.0.0",
+    "@types/react": "^19.2.14",
+    "@types/react-dom": "^19.2.3",
+    "astro": "^6.0.4",
+    "react": "^19.2.4",
+    "react-activity-calendar": "3.1.1",
+    "react-dom": "^19.2.4",
+    "typescript": "^5.9.3"
   }
 }

@@ -1,4 +1,4 @@
-import type { Props } from '../react-activity-calendar/src/components/ActivityCalendar';
+import type { Props } from '../react-activity-calendar';
 
 export const calendarData = [
   {

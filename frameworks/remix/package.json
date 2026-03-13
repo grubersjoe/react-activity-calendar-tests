@@ -6,36 +6,29 @@
   "scripts": {
     "build": "remix vite:build",
     "dev": "remix vite:dev --port 3003",
+    "dev-test": "npm run dev",
+    "ssr-test": "npm run build && npm start",
     "start": "PORT=3003 remix-serve ./build/server/index.js",
-    "typecheck": "tsc",
-    "ssr-test": " rm -rf node_modules/.vite && npm run build && npm start",
-    "dev-test": " rm -rf node_modules/.vite && npm run dev"
+    "typecheck": "tsc"
   },
   "dependencies": {
-    "@remix-run/node": "^2.16.0",
-    "@remix-run/react": "^2.16.0",
-    "@remix-run/serve": "^2.16.0",
-    "isbot": "^5.1.30",
-    "react": "^19.1.1",
-    "react-activity-calendar": "3.0.0-alpha.4",
-    "react-dom": "^19.1.1"
+    "@remix-run/node": "^2.17.4",
+    "@remix-run/react": "^2.17.4",
+    "@remix-run/serve": "^2.17.4",
+    "isbot": "^5.1.36",
+    "react": "^19.2.4",
+    "react-activity-calendar": "3.1.1",
+    "react-dom": "^19.2.4"
   },
   "devDependencies": {
-    "@floating-ui/react": "^0.27.16",
-    "@remix-run/dev": "^2.16.0",
-    "@types/react": "^19.1.12",
-    "@types/react-dom": "^19.1.9",
-    "autoprefixer": "^10.4.19",
-    "typescript": "^5.9.2",
-    "vite": "^7.1.4",
-    "vite-tsconfig-paths": "^5.1.4"
+    "@remix-run/dev": "^2.17.4",
+    "@types/react": "^19.2.14",
+    "@types/react-dom": "^19.2.3",
+    "autoprefixer": "^10.4.27",
+    "typescript": "^5.9.3",
+    "vite": "^8.0.0"
   },
   "engines": {
     "node": ">=20.0.0"
-  },
-  "pnpm": {
-    "onlyBuiltDependencies": [
-      "esbuild"
-    ]
   }
 }

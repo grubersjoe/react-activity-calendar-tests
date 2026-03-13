@@ -3,6 +3,7 @@ packages:
   - react-activity-calendar/
 
 onlyBuiltDependencies:
+  - '@parcel/watcher'
   - '@swc/core'
   - esbuild
   - sharp

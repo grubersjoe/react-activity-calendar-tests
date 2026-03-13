@@ -24,10 +24,10 @@ corresponding demo page is opened in the browser automatically.
 
 ```shell
 # To test using the currently published npm package
-./test-npm.sh dev
-./test-npm.sh ssr
+./test-npm.fish dev
+./test-npm.fish ssr
 
 # To test using the locally checked out react-activity-calendar source
-./test-local.sh dev
-./test-local.sh ssr
+./test-local.fish dev
+./test-local.fish ssr
 ```
