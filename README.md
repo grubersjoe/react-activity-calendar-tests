@@ -5,15 +5,14 @@ following React frameworks in their development and production mode. In
 particular, this involves checking that server side rendering (SSR) works. All
 projects were created according to their documentation.
 
-- Astro v4
-- Next.js v14
+- Astro v6
+- Next.js v16
 - Remix v2
-- Vite v5
+- Vite v8
 
 ## Usage
 
-To execute the test scripts the [`fish`](https://fishshell.com/) shell and
-[`pnpm`](https://pnpm.io/) are required.
+To execute the test scripts `bash` and [`pnpm`](https://pnpm.io/) are required.
 
 There are two scripts: one that uses the currently published
 `react-activity-calendar` npm package and another that builds the current main
@@ -24,10 +23,10 @@ corresponding demo page is opened in the browser automatically.
 
 ```shell
 # To test using the currently published npm package
-./test-npm.fish dev
-./test-npm.fish ssr
+./test-npm.sh dev
+./test-npm.sh ssr
 
 # To test using the locally checked out react-activity-calendar source
-./test-local.fish dev
-./test-local.fish ssr
+./test-local.sh dev
+./test-local.sh ssr
 ```
