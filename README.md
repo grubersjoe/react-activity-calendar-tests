@@ -12,7 +12,7 @@ projects were created according to their documentation.
 
 ## Usage
 
-To execute the test scripts `bash` and [`pnpm`](https://pnpm.io/) are required.
+To execute the test scripts `bash`, `curl` and [`pnpm`](https://pnpm.io/) are required.
 
 There are two scripts: one that uses the currently published
 `react-activity-calendar` npm package and another that builds the current main
