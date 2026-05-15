@@ -10,18 +10,10 @@
     "preview": "vite preview --port 3004",
     "ssr-test": "npm run build && npm run preview"
   },
-  "dependencies": {
-    "react": "^19.2.4",
-    "react-activity-calendar": "3.1.1",
-    "react-dom": "^19.2.4"
-  },
   "devDependencies": {
     "@floating-ui/react": "^0.27.19",
-    "@types/react": "^19.2.14",
-    "@types/react-dom": "^19.2.3",
     "@vitejs/plugin-react": "^6.0.1",
     "globals": "^17.4.0",
-    "typescript": "^5.9.3",
     "vite": "^8.0.1"
   }
 }
