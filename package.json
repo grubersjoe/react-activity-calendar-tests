@@ -11,11 +11,19 @@
     "format": "prettier --write ./*"
   },
   "devDependencies": {
-    "prettier": "^3.8.1"
+    "@types/react": "^19.2.14",
+    "@types/react-dom": "^19.2.3",
+    "prettier": "^3.8.1",
+    "typescript": "^6.0.3"
   },
   "prettier": {
     "proseWrap": "always",
     "singleQuote": true,
     "trailingComma": "all"
+  },
+  "dependencies": {
+    "react": "^19.2.6",
+    "react-activity-calendar": "^3.2.0",
+    "react-dom": "^19.2.6"
   }
 }
