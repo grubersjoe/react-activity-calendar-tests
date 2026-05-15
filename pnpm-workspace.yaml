@@ -2,9 +2,7 @@ packages:
   - frameworks/*
   - react-activity-calendar/
 
-onlyBuiltDependencies:
-  - '@parcel/watcher'
-  - '@swc/core'
-  - esbuild
-  - sharp
-  - unrs-resolver
+allowBuilds:
+  '@parcel/watcher': true
+  esbuild: true
+  sharp: true
