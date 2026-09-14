@@ -12,8 +12,8 @@
     "start": "astro preview"
   },
   "dependencies": {
-    "@astrojs/check": "^0.9.9",
-    "@astrojs/react": "^6.0.0",
-    "astro": "^6.3.3"
+    "@astrojs/check": "^0.9.10",
+    "@astrojs/react": "^6.0.5",
+    "astro": "^7.3.2"
   }
 }
