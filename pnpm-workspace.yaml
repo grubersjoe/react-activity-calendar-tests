@@ -2,6 +2,11 @@ packages:
   - frameworks/*
   - react-activity-calendar/
 
+catalog:
+  react: ^19.3.0
+  react-dom: ^19.3.0
+  react-activity-calendar: ^3.2.1
+
 allowBuilds:
   '@parcel/watcher': true
   esbuild: true

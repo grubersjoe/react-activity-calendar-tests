@@ -10,10 +10,15 @@
     "preview": "vite preview --port 3004",
     "ssr-test": "npm run build && npm run preview"
   },
+  "dependencies": {
+    "react": "catalog:",
+    "react-activity-calendar": "catalog:",
+    "react-dom": "catalog:"
+  },
   "devDependencies": {
     "@floating-ui/react": "^0.27.19",
     "@vitejs/plugin-react": "^6.0.1",
     "globals": "^17.6.0",
-    "vite": "^8.0.13"
+    "vite": "^8.3.1"
   }
 }
